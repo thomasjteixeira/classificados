@@ -5,14 +5,16 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
-        @user.save
-
-        redirect_to "/sessions/new", notice: "Cadastro realizado com sucesso!"
+        if @user.save
+            redirect_to new_session_path, notice: "Cadastro realizado com sucesso!"
+        else
+            render :new
+        end
     end
 
     private
 
     def user_params
-        params.require(:user).permit(:name, :email, :password, :password_confirmat)
+        params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 end
