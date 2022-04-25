@@ -1,24 +1,7 @@
-# README
+# API Ruby on Rails de classificados web (em construção)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **Banco de dados: PostgreSQL**
+- **Autenticação e Autorização:** Devise
+- **Testes:** RSpec, Capybara, Factory Bot
+- **Docker**
+- **Deploy:** Heroku

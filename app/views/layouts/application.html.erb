@@ -17,8 +17,14 @@
     </p>
   
     <nav>
-      <%= link_to "Cadastre-se", new_user_path %>
+      <% if user_signed_in?%>
+        usuario Logado
+        <%else%>  
+          <%= link_to "Cadastre-se", new_user_path %>
+          <%= link_to "Entrar", new_session_path %>
+        <%end%>
     </nav>
+
     <%= yield %>
   </body>
 </html>

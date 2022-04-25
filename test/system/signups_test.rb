@@ -1,11 +1,8 @@
 require "application_system_test_case"
 
 class SignupsTest < ApplicationSystemTestCase
-  # test "visiting the index" do
-  #   visit signups_url
-  #
-  #   assert_selector "h1", text: "Signup"
-  # end
+
+=begin
 
   test "usuario faz cadastro com dados validos" do
     visit "/"
@@ -21,6 +18,7 @@ class SignupsTest < ApplicationSystemTestCase
     assert_text "Cadastro realizado com sucesso!"
   end
 
+=begin
   test "usuario faz cadastro com dados invalidos" do
     visit "/"
     click_on "Cadastre-se"
@@ -28,5 +26,5 @@ class SignupsTest < ApplicationSystemTestCase
 
     assert_text "Erro ao salvar"
   end
-  
+=end
 end
